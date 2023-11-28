@@ -5,28 +5,28 @@
 const projects = [
     {
         title: 'E-BIMIndustrial',
-        img: 'public/ebimindustrial.png',
+        img: 'ebimindustrial.png',
         description: 'Creación de landing page para start-up del rubro tecnológico, además de integración de funcionalidades desarrolladas en el Backend',
         technologies: ['ReactJS', 'MaterialUI'],
         link: 'https://www.e-bimindustrial.com'
     },
     {
         title: 'Teslo Shop',
-        img: '/tesloshop.png',
+        img: 'tesloshop.png',
         description: 'Clon de tienda Tesla hecho en NextJS, login con Google, protección de rutas entre otras funcionalidades',
         technologies: ['NextJS', 'MongoDB', 'Cloudinary'],
         link: 'https://testloshop-nextjs-production.up.railway.app'
     },
     {
         title: 'NextJS Messenger',
-        img: 'public/messenger.png',
+        img: 'messenger.png',
         description: 'Chat en tiempo real usando Pusher Channels, registro con credenciales o con Google y GitHub usando NextAuth.',
         technologies: ['NextJS', 'MaterialUI', 'Pusher', 'NextAuth', 'MongoDB', 'Prisma'],
         link: 'https://messenger-next-production.up.railway.app'
     },
     {
         title: 'Proyecto JS CoderHouse',
-        img: 'public/musicprojectcoderhouse.png',
+        img: 'musicprojectcoderhouse.png',
         description: 'Proyecto final para el curso de JavaScript de CoderHouse, realizado únicamente con HTML, CSS y VanillaJS',
         technologies: ['HTML', 'CSS', 'JS'],
         link: 'https://camiloerh.github.io/proyecto-js-coderhouse'
