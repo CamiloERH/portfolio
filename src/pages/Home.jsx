@@ -39,7 +39,7 @@ const Home = () => {
                         transition={{ duration: 1, ease: 'easeInOut' }}
                         className='hidden absolute xl:flex xl:right-[250px] bottom-0 w-[400px]'
                     >
-                        <img src='/cat.webp' />
+                        <img src='cat.webp' />
                     </motion.div>
                 </div>
             </div>
