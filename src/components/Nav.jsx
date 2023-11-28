@@ -22,7 +22,7 @@ const Nav = () => {
                         <Link
                             className={`${link.path === pathname && 'text-accent'
                                 } relative flex items-center group hover:text-accent transition-all duration-300`}
-                            href={link.path}
+                            to={link.path}
                             key={index}
                         >
                             {/* tooltip */}
