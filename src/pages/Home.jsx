@@ -28,7 +28,7 @@ const Home = () => {
                         exit='hidden'
                         className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
                     >
-                        Mi nombre es Camilo Rojas, estudiante de Ingeniería en Informática y Telecomunicaciones, en este espacio se encuentran...
+                        Mi nombre es Camilo Rojas, estudiante de Ingeniería en Informática y Telecomunicaciones, en este espacio se encuentra información sobre mis proyectos, conocimiento y recursos que ire guardando.
                     </motion.p>
                     {/* btn */}
                     <motion.div
