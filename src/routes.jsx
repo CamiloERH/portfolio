@@ -17,13 +17,13 @@ export const publicRoutes = [
         label: 'Home'
     },
     {
-        path: "/portfolio/about",
+        path: "/about",
         element: <About />,
         icon: <HiUser />,
         label: 'Sobre mí'
     },
     {
-        path: "/portfolio/projects",
+        path: "/projects",
         element: <Projects />,
         icon: <HiMiniWindow />,
         label: 'Proyectos'
