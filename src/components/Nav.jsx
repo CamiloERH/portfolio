@@ -1,23 +1,6 @@
 
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-// nav data
-// export const navData = [
-//     { name: 'home', path: '/', icon: <HiHome /> },
-//     { name: 'about', path: '/about', icon: <HiUser /> },
-//     { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-//     { name: 'work', path: '/work', icon: <HiViewColumns /> },
-//     {
-//         name: 'testimonials',
-//         path: '/testimonials',
-//         icon: <HiChatBubbleBottomCenterText />,
-//     },
-//     {
-//         name: 'contact',
-//         path: '/contact',
-//         icon: <HiEnvelope />,
-//     },
-// ];
 
 import { publicRoutes } from '../routes';
 
@@ -36,7 +19,7 @@ const Nav = () => {
             >
                 {publicRoutes.map((link, index) => {
                     return (
-                        <a
+                        <Link
                             className={`${link.path === pathname && 'text-accent'
                                 } relative flex items-center group hover:text-accent transition-all duration-300`}
                             href={link.path}
@@ -54,7 +37,7 @@ const Nav = () => {
                             </div>
                             {/* icon */}
                             <div>{link.icon}</div>
-                        </a>
+                        </Link>
                     );
                 })}
             </div>
