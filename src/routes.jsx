@@ -5,9 +5,10 @@ import {
     HiUser
 } from 'react-icons/hi2';
 
-import Home from "./pages/Home";    
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from './pages/About';
+import Resources from './pages/Resources';
 
 export const publicRoutes = [
     {
@@ -28,6 +29,11 @@ export const publicRoutes = [
         icon: <HiMiniWindow />,
         label: 'Proyectos'
     },
+    {
+        path: "/resources",
+        element: <Resources />,
+        icon: <HiBookOpen />,
+        label: 'Recursos'
+    },
 
-    
 ];

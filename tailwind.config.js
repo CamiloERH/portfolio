@@ -27,10 +27,7 @@ module.exports = {
         accent: '#F13024',
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("../site-bg.svg")',
+        site: 'url("site-bg.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
@@ -38,6 +35,9 @@ module.exports = {
       fontFamily: {
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit, minmax(20rem, 1fr))',
+      }
     },
   },
   container: {
@@ -45,5 +45,5 @@ module.exports = {
       DEFAULT: '15px',
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
 };

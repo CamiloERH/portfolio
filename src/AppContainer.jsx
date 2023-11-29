@@ -7,7 +7,6 @@ const ErrorComponent = ({ errorMessage }) => (
 );
 
 const AppContainer = () => {
-
     return (
         <>
             <Helmet>
