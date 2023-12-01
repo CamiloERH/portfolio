@@ -27,7 +27,7 @@ module.exports = {
         accent: '#F13024',
       },
       backgroundImage: {
-        site: 'url("site-bg.svg")',
+        site: 'url("../site-bg.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
