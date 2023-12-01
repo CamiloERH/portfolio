@@ -6,7 +6,7 @@ import ProjectsSlider from '../components/ProjectsSlider';
 
 const Projects = () => {
     return (
-        <div className='h-full bg-primary/30 py-36 flex items-center'>
+        <div className='h-[calc(100vh-90px)] bg-primary/30 py-36 flex items-center'>
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row gap-x-8 justify-center'>
                     <div className='text-center flex xl:w-[30%] flex-col lg:text-left mb-4 xl:mb-0'>

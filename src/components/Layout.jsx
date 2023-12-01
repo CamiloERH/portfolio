@@ -8,7 +8,7 @@ import Header from './Header';
 const Layout = () => {
 
     return (
-        <div className={`page bg-site text-white bg-cover bg-no-repeat relative`} >
+        <div className={`page h-full text-white`} >
             <Header />
             <Nav />
             <Outlet />

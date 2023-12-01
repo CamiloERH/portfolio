@@ -35,7 +35,7 @@ const resourcesData = [
 
 const Resources = () => {
     return (
-        <div className='bg-primary/30 py-36 flex items-center s'>
+        <div className='bg-primary/30 py-36 flex items-center'>
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-x-8 justify-center'>
                     <div className='text-center flex flex-col mb-4 xl:mb-0'>
@@ -63,7 +63,7 @@ const Resources = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='w-full max-h-[600px] grid grid-cols-fluid gap-2 px-2 overflow-y-auto scrollbar scrollbar-thumb-accent scrollbar-track-slate-700 scrollbar-track-rounded-sm scrollbar-thumb-rounded-md'
+                        className='w-full grid grid-cols-fluid gap-2 px-2 overflow-y-auto'
                     >
                         {
                             resourcesData.map((item) => (

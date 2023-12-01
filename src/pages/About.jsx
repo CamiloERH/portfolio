@@ -83,9 +83,8 @@ import { fadeIn } from '../utils/variants';
 
 const About = () => {
     const [index, setIndex] = useState(0);
-    console.log(index);
     return (
-        <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
+        <div className='h-full xl:h-[calc(100vh-90px)] py-32 xl:bg-primary/30 text-center xl:text-left'>
             <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
                 {/* text */}
                 <div className='flex-1 flex flex-col justify-center'>
@@ -103,7 +102,7 @@ const About = () => {
                         initial='hidden'
                         animate='show'
                         exit='hidden'
-                        className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
+                        className='xl:max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
                     >
                         Egresado de Ingeniería Civil en Informática y Telecomunicaciones, actualmente me encuentro estudiando para mi examen de grado y profundizando mis conocimientos sobre desarrollo web.
                     </motion.p>
@@ -114,7 +113,7 @@ const About = () => {
                     initial='hidden'
                     animate='show'
                     exit='hidden'
-                    className='flex flex-col w-full xl:max-w-[48%] h-[480px] justify-center'
+                    className='flex flex-col w-full xl:max-w-[48%] justify-center'
                 >
                     <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
                         {aboutData.map((item, itemIndex) => {
@@ -131,12 +130,12 @@ const About = () => {
                             );
                         })}
                     </div>
-                    <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+                    <div className='mb-[80px] py-4 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
                         {aboutData[index].info.map((item, itemIndex) => {
                             return (
                                 <div
                                     key={itemIndex}
-                                    className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
+                                    className='flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'
                                 >
                                     {/* title */}
                                     <div className='font-light mb-2 md:mb-0'>{item.title}</div>
@@ -149,17 +148,17 @@ const About = () => {
                                     }
                                     <div className='flex gap-x-4'>
                                         {/* icons */}
-                                        {item.icons?.map((item, itemIndex) => {
+                                        {item.icons?.map((iconItem, iconItemIndex) => {
                                             return (
-                                                <div className='text-2xl text-white group relative hover:text-accent transition-all duration-300'>
+                                                <div key={iconItem.label} className='text-2xl text-white group relative hover:text-accent transition-all duration-300'>
                                                     <div className='absolute bottom-[-50px] hidden xl:group-hover:flex'>
                                                         <div className='bg-white flex text-primary items-center p-[6px] rounded-[3px]'>
                                                             <div className='text-[12px] leading-none font-semibold capitalize text-center'>
-                                                                {item.label}
+                                                                {iconItem.label}
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {item.icon}
+                                                    {iconItem.icon}
                                                 </div>
                                             )
                                         })}
@@ -169,6 +168,7 @@ const About = () => {
                         })}
                     </div>
                 </motion.div>
+                <div className='h-[180px]'></div>
             </div>
         </div>
     );
