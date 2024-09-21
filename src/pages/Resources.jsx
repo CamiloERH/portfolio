@@ -31,6 +31,13 @@ const resourcesData = [
         img: 'https://d3n817fwly711g.cloudfront.net/uploads/2020/10/tutorial-del-diagrama-de-secuencia-1.png',
         tags: ['Diagrama de secuencia', 'UML', 'Diagramas']
     },
+    {
+        title: 'A Guide to ACID Properties in DBMS',
+        description: 'Article about ACID transactions and their importance',
+        link: 'https://www.mongodb.com/resources/basics/databases/acid-transactions',
+        img: 'https://scalegrid.io/wp-content/uploads/mongodb-acid-principles.png',
+        tags: ['ACID', 'Database', 'DBMS']
+    },
 ]
 
 const Resources = () => {
